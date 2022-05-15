@@ -115,19 +115,19 @@ body {
     background-color: rgb(168, 150, 57);
 }
 
-#slider__control-1:checked ~ .slider__controls .slider__label-1 .control {
+#slider__control-1:checked ~ .slider__caption__block .slider__controls .slider__label-1 .control {
     background-color: #d02849;
 }
 
-#slider__control-2:checked ~ .slider__controls .slider__label-2 .control {
+#slider__control-2:checked ~ .slider__caption__block .slider__controls .slider__label-2 .control {
     background-color: #d02849;
 }
 
-#slider__control-3:checked ~ .slider__controls .slider__label-3 .control {
+#slider__control-3:checked ~ .slider__caption__block .slider__controls .slider__label-3 .control {
     background-color: #d02849;
 }
 
-#slider__control-4:checked ~ .slider__controls .slider__label-4 .control {
+#slider__control-4:checked ~ .slider__caption__block .slider__controls .slider__label-4 .control {
     background-color: #d02849;
 }
 
@@ -145,4 +145,23 @@ body {
 
 #slider__control-4:checked ~ .slider .slider__container {
     margin-left: -300%;
+}
+
+.slider__caption__block {
+    display: flex;
+    width: 50%;
+}
+
+.caption__container {
+    display: flex;
+    overflow: hidden;
+}
+
+.caption {
+    font-size: 2rem;
+    color: white;
+    min-width: 100%;
+    width: 100%;
+    line-height: 2rem;
+    margin: 0;
 }
