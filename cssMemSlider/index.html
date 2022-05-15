@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,52 @@
     <title>cssMemSlider</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <header class="header">
-        <h1 class="header__title">cssMemSlider</h1>
-    </header>
-    <!-- /.header -->
-    <main class="main">
-        <div class="container">
-            <input type="radio" name="slider-input" id="slider__btn" class="slider__input" checked>
-            <input type="radio" name="slider-input" id="slider__btn" class="slider__input">
-            <input type="radio" name="slider-input" id="slider__btn" class="slider__input">
-            <input type="radio" name="slider-input" id="slider__btn" class="slider__input">
-            <div class="slider">
-                <div class="slider__container">
-                    <div class="slider__img meme_1"></div>
-                    <div class="slider__img meme_2"></div>
-                    <div class="slider__img meme_3"></div>
-                    <div class="slider__img meme_4"></div>
+    <div class="page__wrapper">
+        <header class="header">
+            <h1 class="header__title">cssMemSlider</h1>
+        </header>
+        <!-- /.header -->
+        <main class="main">
+            <div class="container">
+                <input type="radio" name="slider-input" id="slider__control-1" class="slider__input" checked>
+                <input type="radio" name="slider-input" id="slider__control-2" class="slider__input">
+                <input type="radio" name="slider-input" id="slider__control-3" class="slider__input">
+                <input type="radio" name="slider-input" id="slider__control-4" class="slider__input">
+                <div class="slider">
+                    <div class="slider__container">
+                        <div class="slider__img slider__meme_1"></div>
+                        <div class="slider__img slider__meme_2"></div>
+                        <div class="slider__img slider__meme_3"></div>
+                        <div class="slider__img slider__meme_4"></div>
+                    </div>
+                    <!-- /.slider__container -->
                 </div>
-                <!-- /.slider__container -->
+                <!-- /.slider -->
+                <div class="slider__controls">
+                    <label for="slider__control-1" class="slider__label">
+                        <div class="control"></div>
+                    </label>
+                    <label for="slider__control-2" class="slider__label">
+                        <div class="control"></div>
+                    </label>
+                    <label for="slider__control-3" class="slider__label">
+                        <div class="control"></div>
+                    </label>
+                    <label for="slider__control-4" class="slider__label">
+                        <div class="control"></div>
+                    </label>
+                </div>
+                <!-- /.slider__controls -->
             </div>
-            <!-- /.slider -->
-        </div>
-        <!-- /.container -->
-    </main>
-    <!-- /.main -->
-    
+            <!-- /.container -->
+        </main>
+        <!-- /.main -->
+
+    </div>
+    <!-- /.page__wrapper -->
+
 </body>
+
 </html>
