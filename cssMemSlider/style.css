@@ -59,6 +59,7 @@ body {
     width: 400%;
     height: 100%;
     display: flex;
+    transition: all 0.2s ease-in-out;
 }
 
 .slider__img {
@@ -99,7 +100,7 @@ body {
 
 .control {
     width: 1.5em;
-    background: rgba(251, 255, 8, 0.742);
+    background-color: rgba(251, 255, 8, 0.742);
     height: 1.5em;
     border-radius: 50%;
     cursor: pointer;
@@ -112,4 +113,36 @@ body {
 
 .control:active {
     background-color: rgb(168, 150, 57);
+}
+
+#slider__control-1:checked ~ .slider__controls .slider__label-1 .control {
+    background-color: #d02849;
+}
+
+#slider__control-2:checked ~ .slider__controls .slider__label-2 .control {
+    background-color: #d02849;
+}
+
+#slider__control-3:checked ~ .slider__controls .slider__label-3 .control {
+    background-color: #d02849;
+}
+
+#slider__control-4:checked ~ .slider__controls .slider__label-4 .control {
+    background-color: #d02849;
+}
+
+#slider__control-1:checked ~ .slider .slider__container {
+    margin-left: 0;
+}
+
+#slider__control-2:checked ~ .slider .slider__container {
+    margin-left: -100%;
+}
+
+#slider__control-3:checked ~ .slider .slider__container {
+    margin-left: -200%;
+}
+
+#slider__control-4:checked ~ .slider .slider__container {
+    margin-left: -300%;
 }
