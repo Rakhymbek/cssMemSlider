@@ -69,6 +69,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  border-radius: 2rem;
+  background-color: #000000b8;
 }
 
 .slider__meme_1 {
@@ -233,6 +235,7 @@ body {
   width: 100%;
   line-height: 2rem;
   margin: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 @media (max-width: 768px) {
